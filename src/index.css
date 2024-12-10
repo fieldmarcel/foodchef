@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/samarkan');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Margarine&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  font-family: "PT Serif", serif;
+  scroll-behavior: smooth;
+  /* background-color: #f2eae3; */
+ 
+    background-color: rgb(252, 243, 231);
+
+}
+
+.home{
+  background-image: url('Vector 1 (1).svg');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 100%;
+  background-attachment: fixed;
+}
+
+
+@media (max-width:768px) {
+  body{
+    background-size: contain;
+    height: 100vh;
+  }
+  
+}
+
+/* .loginphoto{
+  background-image: url('pexels-brigitte-tohm-36757-239581.jpg');
+
+} */
+
+.title{
+  font-family: "samarkan";
+    font-weight: 600;
+  font-size: large;
+  font-style: normal;
+  text-decoration-style: dotted;
+}
+.navb{
+  /* background-image: url(https://images.unsplash.com/photo-1459933083533-46381576caa9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%; 
+} */
+
+}
+.navi{
+ color: #0c0c01;
+font-size: larger;
+font-weight: 500;
+  font-family:"Margarine";
+ 
+}
+.photo:hover{
+  /* box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.25); */
+
+  
+}
+
+#search{
+  margin-top: 5.5rem;
+
+  font-family: Margarine;
+  background-color: rgba(171, 209, 223, 0.315);
+  outline: none;
+}
+.caption-box{
+  background-color: rgb(213, 234, 234);
+  border-radius: 2rem;
+}
+
+.caption{
+  font-family:"Margarine";
+color: rgb(9, 77, 7);
+}
+
+.image{
+  background-color: aqua;
+}
+
+@media(max-width:768px){
+
+  #search{
+    padding: 10px;
+    width: 90vw;
+  }
+}
+  
+
+@media(max-width:390px){
+
+.card{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr))
+}
+
+.caption{
+  font-size: small;
+   
+ }
+.image{
+  height: 250px;
+}
+
+}
